@@ -1,0 +1,32 @@
+Package: sac2EQTransformR
+Type: Package
+Title: Reformats and merges dat files and SAC files from SEISMOS into STEAD format for building EQTransformer training models.  
+Version: 0.1.0
+Author: Bryan R Thomas, Ghislain Nono Gueye Ph.D.
+Maintainer: Bryan R Thomas <bryanrt.bt@gmail.com>
+Description: sac2EQTransformR has been designed to reformat a number of data types into the hdf5 and csv files required by the Python package EQTransformer for building training models used in a deep learning approach to seismic event charecterization and cataloging. sac2EQTransformRwas was made with the by-hand method SEISMOS in mind and uses the .dat file types from SEISMOS to gather attributes for the labeling and clipping of signal data found in SAC files. 
+License: What license is it under?
+Encoding: UTF-8
+LazyData: true
+Imports: 
+    dplyr,
+    purrr,
+    tidyr,
+    stats,
+    stringr,
+    fs,
+    jsonlite,
+    tibble,
+    hdf5r,
+    here,
+    RSEIS,
+    readr,
+    furrr,
+    future,
+    progressr,
+    eseis
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
+RoxygenNote: 7.1.1
